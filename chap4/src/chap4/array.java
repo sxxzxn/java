@@ -54,6 +54,10 @@ public class array {
 		for (int i=0; i<alphabets.length; i++) {
 			System.out.println(alphabets[i] + ":"+ (int)alphabets[i]);
 		}
+		System.out.println("--------------------------");
+		
+		
+		
 		
 	}
 

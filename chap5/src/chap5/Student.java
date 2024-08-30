@@ -1,6 +1,19 @@
 package chap5;
 
 public class Student {
+	
+	
+	
+	
+	
+	//-----------------------------------------------------
+	int studentNo;
+	String studentName;
+	int grade;
+	private char gender; // DB연동을 위해 제일 작은 타입을 사용한다
+	static int seraiNo;
+	String rider;
+	
 	// 클래스는 대문자 선언
 	// 퍼블릭 클래스 일때 클래스의 이름과 클래스를 생성한 자바 파일 이름이 동일해야함
 	
@@ -20,11 +33,30 @@ public class Student {
 	// 		리턴타입이 없을때 : 함수명( );
 	//		리턴타입이 있을 때 : 자료형 변수명 = 함수명( );
 	
-	int studentNo;
-	String studentName;
-	int grade;
-	private char gender; // DB연동을 위해 제일 작은 타입을 사용한다
 	
+	//--------------------------------------------------
+	// this 의 메서드
+	// 어딘가에서 미리 정의하고 추후 불러서 사용할 수 있음
+	
+	Student(){
+		// System.out.println("Student() 호출");
+	}
+	
+	Student (int sno){
+	this(); //-> Student() // 시그니처가 동일함
+	//여기 안에서 sno의 값을 불러온다
+	
+	}
+	
+	Student (int sno, int no){
+	this(1); //-> Student (int sno) // 시그니처가 동일함
+	}
+	
+	Student (int sno, int no, char gender){
+	this(sno, no);// -> Student (int sno, int no)를 불러오는거다
+	}
+
+	static private int no;
 	
 	//	Student() {} 매개변수를 지정할 경우 이 기본형을 꼭 적어준다
 
@@ -66,6 +98,28 @@ public class Student {
 	public void setGender(char gender) { // 선언시점에는 매개변수
 		this.gender = gender; // 사용시점에는 인자, 인수
 	}
+	
+	
+	public String getRide(){
+		return "탈것을고르세요";
+	}
+	
+	public String getRider() {
+		return this.rider;
+	}
+	
+	public void setRider(String rider) {
+		this.rider = rider;
+	}
+
+	public static int getSeraiNo() {
+		return seraiNo;
+	}
+
+	public static void setSeraiNo(int seraiNo) {
+		Student.seraiNo = seraiNo;
+	}
+
 	
 //	public String getStudentInfo() {
 //		return this.studentName + ":" + this.gender + ";" + this.grade;

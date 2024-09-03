@@ -2,6 +2,10 @@ package chap7.java7.chungae;
 
 
 public class People {
+	People(){}
+	People(String name){
+		this.name = name;
+	}
 	String name;
 	int age;
 
@@ -16,6 +20,9 @@ public class People {
 }
 
 class Student extends People {
+	Student (){
+		super(); // = this
+	}
 	int schoolNo;
 
 	public void goSchool() {
@@ -25,10 +32,13 @@ class Student extends People {
 }
 
  class Worker extends People {
+	 
 	int workNo;
 
 	public void goWork() {
 		System.out.println("출근");
 	};
-}
+
+	}
+
 

@@ -43,6 +43,10 @@ public class ArraySample {
 		}
 		
 		Scanner sc = new Scanner(System.in) ;
+		System.out.println("1. 이전페이지 : ");
+		System.out.println("2. 다음페이지 : ");
+		System.out.println("3. 글등록 : ");
+		System.out.println("원하는 번호를 입력하세요");
 		String name = sc.next();
 		
 		switch(name) {

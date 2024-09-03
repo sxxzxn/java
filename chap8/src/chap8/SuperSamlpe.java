@@ -53,15 +53,19 @@ public class SuperSamlpe {
 		Animal bird = new Bird();
 		Animal cat = new Cat();
 		Animal dog = new Dog();
+		Animal  test = new Test();
 
 		a.cry();
 		bird.cry();
 		cat.cry();
 		dog.cry();
+		test.cry();
 		
 		
 		Scanner sc = new Scanner(System.in);	
+		String name = sc.next();
 		
+		System.out.println("입력받은문자 : "+ name);
 		
 		
 	}

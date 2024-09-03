@@ -19,7 +19,7 @@ public class People {
 	};
 }
 
-class Student extends People {
+ class Student extends People {
 	Student (){
 		super(); // = this
 	}

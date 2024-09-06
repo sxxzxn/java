@@ -9,6 +9,7 @@ public class EventImpl extends NoticeImpl implements BasicBbsif {
 	String endDay;
 	String dDay;
 
+
 	@Override
 	public void getBbsList(int pageSize, int pageNo, String searchCategory, String searchWord) {
 		String[][] arr = { 
@@ -33,7 +34,7 @@ public class EventImpl extends NoticeImpl implements BasicBbsif {
 				{ "19", "운동", "런닝", "2024-09-01", "2024-09-02", "2024-09-10" },
 
 		};
-
+		
 		List<String[]> List = new ArrayList<>();
 
 	    for (String[] item : arr) {
@@ -51,19 +52,21 @@ public class EventImpl extends NoticeImpl implements BasicBbsif {
 	        System.out.println("검색된 내용이 없습니다.");
 	        return;
 	    }
-
+	    
+	    // 게시글 상단 부분
 	    System.out.println("----------------------------이벤트 리스트-----------------------------");
 	    System.out.println("글번호    이벤트제목  내용\t  시작일\t\t  종료일\t\t  추첨일");
-
+	    
+	    
 	    int totalItems = List.size();
 	    int totalPages = (int) Math.ceil((double) totalItems / pageSize);
 
-	    // 현재 페이지 번호가 범위를 벗어나지 않도록 보정
+	    // 현재 페이지 번호가 범위를 벗어나지 않게
 	    if (pageNo > totalPages) pageNo = totalPages;
 	    if (pageNo < 1) pageNo = 1;
 
 	    int start = (pageNo - 1) * pageSize;
-	    int end = Math.min(start + pageSize, totalItems);
+	    int end = Math.min(start + pageSize -1, totalPages);
 
 	    for (int i = start; i < end; i++) {
 	        String[] item = List.get(i);

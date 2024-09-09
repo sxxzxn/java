@@ -154,7 +154,7 @@ public class EventImpl extends NoticeImpl {
 		System.out.print("\t\t>");
 		System.out.println();
 
-		// End of the listing
+		// 하단 영역
 		System.out.println("---------------------------------------------------------------------");
 		System.out.println("PageSize : " + pageSize + "  " + "pageNo : " + pageNo + "  " + "searchCategory : "
 				+ searchCategory + "  " + "searchWord :" + searchWord);

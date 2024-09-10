@@ -65,8 +65,42 @@ public class Main {
 //				);
 		
 		// r과일
-		Goods2<Apple> goods = new Goods2<>(); // 내가 정의한 클래스내 메서드 사용
+//		Goods2<Apple> goods = new Goods2<>(); // 내가 정의한 클래스내 메서드 사용
 		//Goods2<Pencil> gd2 = new Goods2<Pencil>(); // 과일 클래스를 상속 받지 않아서 Pencil 사용 불가임
+	
+		/*2024-09-10 제네릭
+	 * 
+	 */
+	
+	
+//		//1. 부모 제네릭 클래스
+//		Parent<String> p = new Parent<String>();
+//		p.setT("부모 제네릭 클래스");
+//		System.out.println(p.getT());
+//		
+//		//2. 자식1 제네릭 클래스
+//		Child1<String> c1 = new Child1<String>();
+//		c1.setT("자식 1 제네릭 클래스");
+//		System.out.println(c1.getT());
+//		
+//		
+//		//3. 자식2 제네릭 클래스
+//		Child2<String, Integer> c2 = new Child2<String, Integer>();
+//		c2.setT("자식 2 제네릭 클래스");
+//		c2.setV(100);
+//		System.out.println(c2.getT());
+//		System.out.println(c2.getV());
+		
+		Parent2 p2 = new Parent2();
+		p2.<Integer>print(10);
+		//작성법
+		p2.<Long>print(10L); // 기본이 정수형이라 꼭 기재해준다
+		p2.<Float>print(10.0F);
+		p2.<Double>print(10.0);
+		p2.<Double>print(10D);
+		
+		
+		
 	}
 
 }

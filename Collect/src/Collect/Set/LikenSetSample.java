@@ -36,6 +36,11 @@ public class LikenSetSample {
 	
 		lSet2.clear();
 		System.out.println(lSet2);
+		
+		for(String lSet1List : lSet1) {
+			System.out.println(lSet1List);
+		}
+		
 	}
 
 }

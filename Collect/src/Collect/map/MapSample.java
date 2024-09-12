@@ -79,8 +79,12 @@ public class MapSample {
 		hMap2.remove(3,"다다다");
 		System.out.println(hMap2);
 		
+//		for (Map.Entry<Integer, String> hMap2List : hMap2.entrySet()) {
+//			System.out.print(hMap2List.getKey()+":"+hMap2List.getValue());
+//		}
 		// #13. clear()
 		hMap2.clear();
 		System.out.println(hMap2);
+		
 	}
 }

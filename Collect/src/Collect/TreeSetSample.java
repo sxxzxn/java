@@ -88,6 +88,7 @@ public class TreeSetSample {
 //		System.out.print("while : ");
 //		while(true) {
 //			if(tSet1.size()<=0) break;
+		
 //			System.out.print(tSet1.pollFirst()+" ");
 //		}
 		// 데이터 부분 집합(subSet) todtjd
@@ -100,9 +101,9 @@ public class TreeSetSample {
 		SortedSet<Integer> sSet = tSet1.headSet(30, true);
 		System.out.println(sSet);
 		
-		TreeSet<MyClass> mySet1 = new TreeSet<MyClass>();
-		MyClass my1 = new MyClass(2,3);
-		MyClass my2 = new MyClass(2,3);
+//		TreeSet<MyClass> mySet1 = new TreeSet<MyClass>();
+//		MyClass my1 = new MyClass(2,3);
+//		MyClass my2 = new MyClass(2,3);
 		
 	}
 

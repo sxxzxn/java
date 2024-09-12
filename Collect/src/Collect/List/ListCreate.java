@@ -1,4 +1,4 @@
-package Collect;
+package Collect.List;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -35,6 +35,12 @@ public class ListCreate {
 //		addAll(int index Collection<? Extends E>c)
 		arr2.addAll(1, arr1);
 		System.out.println("arr2"+arr2);
+		
+		
+		arr2.set(1, 22);
+		System.out.println("arr2"+arr2);
+		
 	}
+	
 
 }

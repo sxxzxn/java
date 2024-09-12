@@ -1,4 +1,4 @@
-package Collect;
+package Collect.List;
 
 import java.util.ArrayList;
 import java.util.Arrays;

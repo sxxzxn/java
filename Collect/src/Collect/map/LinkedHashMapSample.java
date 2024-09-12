@@ -1,4 +1,4 @@
-package Collect;
+package Collect.map;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -82,12 +82,12 @@ public class LinkedHashMapSample {
 //		System.out.println(lhMap5);
 		
 		// 삭제 흐 바로확인
-		Map<Integer, String> lhMap3 = new LinkedHashMap<Integer, String>(lhMap2);
-		TreeSet<Integer> keys = new TreeSet<Integer>(lhMap3.keySet());
-		for(Integer i : keys) {
-			lhMap3.put(i, lhMap3.remove(i));
-		}
-		System.out.println("lhMap3 : " + lhMap3);
+//		Map<Integer, String> lhMap3 = new LinkedHashMap<Integer, String>(lhMap2);
+//		TreeSet<Integer> keys = new TreeSet<Integer>(lhMap3.keySet());
+//		for(Integer i : keys) {
+//			lhMap3.put(i, lhMap3.remove(i));
+//		}
+//		System.out.println("lhMap3 : " + lhMap3);
 		
 		
 		
